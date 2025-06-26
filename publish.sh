@@ -10,7 +10,7 @@ if git rev-parse "$TAG" >/dev/null 2>&1; then
 fi
 
 git tag "$TAG"
-git push origin "$VERSION"
+git push origin "$TAG"
 
 echo "✅ Tagged and pushed FloorIDE version $VERSION"
 echo "🚀 GitHub Actions will now build and release the app"
